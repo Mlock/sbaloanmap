@@ -40,6 +40,9 @@ body {
 .Selection {
     display: grid;
     padding: 30px;
+    background-color: #233579;
+    width: 100%;
+    justify-content: center;
 }
 
 .Selection-title {
@@ -61,6 +64,19 @@ body {
     justify-content: center;
     border-radius: 20px;
 }
+.Selection button:nth-child(4) {
+    font-family: var(--font-family);
+    color: #f8f8f8;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #e0516e;
+    width: 140px;
+    height: 48px;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+}
 .Selection button:hover {
     background-color: #e0516e;
     width: 144px;
@@ -72,6 +88,7 @@ body {
 
 .MainContent {
     display: grid;
+    grid-column: span 2;
     grid-template-columns: 2;
     background-color: #122C6D;
 
