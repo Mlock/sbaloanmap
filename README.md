@@ -1,4 +1,4 @@
-This repo will be taking data from the SBA and visualizing where who are getting Small Business loans in the US. 
+This project takes 7(a) loan data from the SBA and visualizes what the breakdown of demographics recieving Small Business loans in the US are. 
 
 Most of that data will becoming from these sites:
 https://www.census.gov/topics/business-economy/small-business/data.html
