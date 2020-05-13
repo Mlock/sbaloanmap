@@ -1,0 +1,173 @@
+:root {
+    --main-color: #102556;
+    --font-family: 'Jost', sans-serif;
+    --graph-color: #3BD78E;
+
+}
+
+body {
+    display:grid;
+    background-color:  var(--main-color);
+    color: #f8f8f8;
+    font-family: var(--font-family);
+}
+
+.Container {
+    display: grid;
+    grid-template-columns: 1fr 800px 1fr;
+    grid-template-rows: 88px 90%;
+    grid-row-gap: 20px;
+    }
+
+.Navigation {
+    background-color: #122C6D;
+    grid-column: 1 / span 3;
+    text-align: center;
+
+}
+
+
+.Sidebar {
+    display: flex;
+    grid-column: 1;
+    /* grid-row: 1 / span 2; */
+    height: 100%;
+}
+.Selection {
+    background-color: #233579;
+    border-radius: 4px 0 0 4px;
+}
+.Selection {
+    display: grid;
+    padding: 30px;
+}
+
+.Selection-title {
+    text-align: center;
+}
+.Selection-item {
+    justify-content: space-around;
+}
+.Selection button {
+    font-family: var(--font-family);
+    color: #f8f8f8;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #FCCE46;
+    width: 140px;
+    height: 48px;
+    border: none;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.Selection button:hover {
+    background-color: #e0516e;
+    width: 144px;
+    height: 50px;
+    filter: drop-shadow(4px 4px 4px #4444dd);
+    transition: .3s;
+}
+
+
+.MainContent {
+    display: grid;
+    grid-template-columns: 2;
+    background-color: #122C6D;
+
+}
+
+.BarChart {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding: 40px;
+}
+.BarChart-bar:nth-child(1) {
+    background-color:  var(--graph-color);
+    justify-items: center;
+    padding-left: 8px;
+    width: 1%;
+}
+.BarChart-bar:hover:nth-child(1) {
+    background-color:  var(--graph-color);
+    justify-items: center;
+    padding-left: 8px;
+    width: 1.5%;
+    transition: .5s;
+}
+.BarChart-bar:nth-child(2) {
+    background-color:  var(--graph-color);
+    justify-items: center;
+    padding-left: 8px;
+    width: 1%;
+}
+.BarChart-bar:hover:nth-child(2) {
+    background-color:  var(--graph-color);
+    justify-items: center;
+    padding-left: 8px;
+    width: 22%;
+    transition: 1s;
+}
+.BarChart-bar:nth-child(3) {
+    background-color:  var(--graph-color);
+    justify-items: center;
+    padding-left: 8px;
+    width: 1%;
+}
+.BarChart-bar:hover:nth-child(3) {
+    background-color:  var(--graph-color);
+    justify-items: center;
+    padding-left: 8px;
+    width: 3%;
+    transition: 1s;
+}
+.BarChart-bar:nth-child(4) {
+    background-color:  var(--graph-color);
+    justify-items: center;
+    padding-left: 8px;
+    width: 1%;
+}
+.BarChart-bar:hover:nth-child(4) {
+    background-color:  var(--graph-color);
+    justify-items: center;
+    padding-left: 8px;
+    width: 6%;
+    transition: 1s;
+}
+.BarChart-bar:nth-child(5) {
+    background-color:  var(--graph-color);
+    justify-items: center;
+    padding-left: 8px;
+    width: 1%;
+}
+.BarChart-bar:hover:nth-child(5) {
+    background-color: var(--graph-color);
+    justify-items: center;
+    padding-left: 8px;
+    width: 19%;
+    transition: 1s;
+}
+.BarChart-bar:nth-child(6) {
+    background-color:  var(--graph-color);
+    justify-items: center;
+    padding-left: 8px;
+    width: 1%;
+}
+.BarChart-bar:nth-child(6) {
+    background-color: #3BD78E;
+    justify-items: center;
+    width: 50%;
+    animation-duration: 5s;
+    animation-name: bargrow;
+}
+
+@keyframes bargrow {
+    from {
+        width: 1%;
+    }
+    to {
+        width: 50%;
+    }
+}
